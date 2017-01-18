@@ -74,8 +74,11 @@ var StableImages = React.createClass({
         return (
             <div className="images">
                 <img src="assets/images/02.jpg" alt="western-rider" style={{width: "280px", height: "250px"}} />
+                {" "}
                 <img src="assets/images/6e74c289cb6e688efb7c0b5c8c7dd81a.jpg" alt="Saddleseat" style={{width: "270px", height: "250px"}} />
+                {" "}
                 <img src="assets/images/$_32.jpg" alt="girl-on-bay-pony" style={{width: "250px", height: "250px"}} />
+                {" "}
                 <img src="assets/images/300px-Holsteiner-hunter.jpg" alt="hunter-horse" style={{width: "300px", height: "250px"}} />
             </div>
         );
