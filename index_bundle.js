@@ -163,227 +163,239 @@
 	            'div',
 	            null,
 	            _react2.default.createElement(
+	                'h3',
+	                null,
+	                'Riding Stables and Lesson Programs'
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'row' },
+	                _react2.default.createElement('div', { className: 'col-med-2' }),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'col-med-8' },
+	                    'Here is information about and links to area riding stables and lesson programs. The stables are listed by county. Many of the riding stables offer boarding for your horse(s), and most of these also have their own riding instructors who offer lessons. Some stables allow bringing your own trainer for lessons.'
+	                ),
+	                _react2.default.createElement('div', { className: 'col-med-2' })
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'images' },
+	                _react2.default.createElement('img', { src: 'assets/images/02.jpg', alt: 'western-rider', style: { width: "280px", height: "250px" } }),
+	                _react2.default.createElement('img', { src: 'assets/images/6e74c289cb6e688efb7c0b5c8c7dd81a.jpg', alt: 'Saddleseat', style: { width: "270px", height: "250px" } }),
+	                _react2.default.createElement('img', { src: 'assets/images/$_32.jpg', alt: 'girl-on-bay-pony', style: { width: "250px", height: "250px" } }),
+	                _react2.default.createElement('img', { src: 'assets/images/300px-Holsteiner-hunter.jpg', alt: 'hunter-horse', style: { width: "300px", height: "250px" } })
+	            ),
+	            _react2.default.createElement(
 	                'div',
 	                { className: 'container' },
-	                _react2.default.createElement(Jumbotron, null),
-	                _react2.default.createElement(Header, null),
 	                _react2.default.createElement(
-	                    'h3',
-	                    null,
-	                    'Riding Stables and Lesson Programs'
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'row' },
-	                    _react2.default.createElement('div', { className: 'col-med-2' }),
+	                    'table',
+	                    { className: 'table table-bordered' },
 	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'col-med-8' },
-	                        'Here is information about and links to area riding stables and lesson programs. The stables are listed by county. Many of the riding stables offer boarding for your horse(s), and most of these also have their own riding instructors who offer lessons. Some stables allow bringing your own trainer for lessons.'
-	                    ),
-	                    _react2.default.createElement('div', { className: 'col-med-2' })
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'images' },
-	                    _react2.default.createElement('img', { src: 'assets/images/02.jpg', alt: 'western-rider', style: { width: "280px", height: "250px" } }),
-	                    _react2.default.createElement('img', { src: 'assets/images/6e74c289cb6e688efb7c0b5c8c7dd81a.jpg', alt: 'Saddleseat', style: { width: "270px", height: "250px" } }),
-	                    _react2.default.createElement('img', { src: 'assets/images/$_32.jpg', alt: 'girl-on-bay-pony', style: { width: "250px", height: "250px" } }),
-	                    _react2.default.createElement('img', { src: 'assets/images/300px-Holsteiner-hunter.jpg', alt: 'hunter-horse', style: { width: "300px", height: "250px" } })
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'container' },
-	                    _react2.default.createElement(
-	                        'table',
-	                        { className: 'table table-bordered' },
+	                        'tbody',
+	                        null,
 	                        _react2.default.createElement(
-	                            'tbody',
+	                            'tr',
 	                            null,
 	                            _react2.default.createElement(
-	                                'tr',
+	                                'th',
 	                                null,
-	                                _react2.default.createElement(
-	                                    'th',
-	                                    null,
-	                                    'Stable Name'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'th',
-	                                    null,
-	                                    'Website'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'th',
-	                                    null,
-	                                    'Street Address'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'th',
-	                                    null,
-	                                    'County'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'th',
-	                                    null,
-	                                    'Services Offered'
-	                                )
+	                                'Stable Name'
 	                            ),
 	                            _react2.default.createElement(
-	                                'tr',
+	                                'th',
 	                                null,
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    'Blue Moon Stables'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    'http://www.bluemoonstables.biz'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    '1120 Whippoorwill Lane, Chapel Hill'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    'Orange'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    'Saddleseat, Lessons, Summer Camps'
-	                                )
+	                                'Website'
 	                            ),
 	                            _react2.default.createElement(
-	                                'tr',
+	                                'th',
 	                                null,
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    'Chapel Hill Equestrian'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    'http://www.chapelhillequestrian.net/default.htm'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    '6614 Alexander Dr, Chapel Hill'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    'Orange'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    'Boarding, Lessons, Hunters, Dressage'
-	                                )
+	                                'Street Address'
 	                            ),
 	                            _react2.default.createElement(
-	                                'tr',
+	                                'th',
 	                                null,
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    'Double Take Stables'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    'http://doubletakestables.weebly.com'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    'Chapel Hill'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    'Orange'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    'Boarding, Lessons, Hunters, Jumpers, Summer Camps'
-	                                )
+	                                'County'
 	                            ),
 	                            _react2.default.createElement(
-	                                'tr',
+	                                'th',
 	                                null,
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    'Flying W Ranch'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    'https://www.facebook.com/Flying-W-Ranch-366577716687074/'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    '5120 St Marys Rd, HillsboroughJ'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    'Orange'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    'Boarding, Western, Hunter under Saddle, Lessons, Summer Camp'
-	                                )
+	                                'Services Offered'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'tr',
+	                            null,
+	                            _react2.default.createElement(
+	                                'td',
+	                                null,
+	                                'Blue Moon Stables'
 	                            ),
 	                            _react2.default.createElement(
-	                                'tr',
+	                                'td',
 	                                null,
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    'Mane Event Stables'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    'http://maneeventstables.com'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    '2545 Hwy 54 W, Chapel Hill'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    'Orange'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'td',
-	                                    null,
-	                                    'Boarding, Lessons, Hunters, Eventing, Summer Camps'
-	                                )
+	                                'http://www.bluemoonstables.biz'
+	                            ),
+	                            _react2.default.createElement(
+	                                'td',
+	                                null,
+	                                '1120 Whippoorwill Lane, Chapel Hill'
+	                            ),
+	                            _react2.default.createElement(
+	                                'td',
+	                                null,
+	                                'Orange'
+	                            ),
+	                            _react2.default.createElement(
+	                                'td',
+	                                null,
+	                                'Saddleseat, Lessons, Summer Camps'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'tr',
+	                            null,
+	                            _react2.default.createElement(
+	                                'td',
+	                                null,
+	                                'Chapel Hill Equestrian'
+	                            ),
+	                            _react2.default.createElement(
+	                                'td',
+	                                null,
+	                                'http://www.chapelhillequestrian.net/default.htm'
+	                            ),
+	                            _react2.default.createElement(
+	                                'td',
+	                                null,
+	                                '6614 Alexander Dr, Chapel Hill'
+	                            ),
+	                            _react2.default.createElement(
+	                                'td',
+	                                null,
+	                                'Orange'
+	                            ),
+	                            _react2.default.createElement(
+	                                'td',
+	                                null,
+	                                'Boarding, Lessons, Hunters, Dressage'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'tr',
+	                            null,
+	                            _react2.default.createElement(
+	                                'td',
+	                                null,
+	                                'Double Take Stables'
+	                            ),
+	                            _react2.default.createElement(
+	                                'td',
+	                                null,
+	                                'http://doubletakestables.weebly.com'
+	                            ),
+	                            _react2.default.createElement(
+	                                'td',
+	                                null,
+	                                'Chapel Hill'
+	                            ),
+	                            _react2.default.createElement(
+	                                'td',
+	                                null,
+	                                'Orange'
+	                            ),
+	                            _react2.default.createElement(
+	                                'td',
+	                                null,
+	                                'Boarding, Lessons, Hunters, Jumpers, Summer Camps'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'tr',
+	                            null,
+	                            _react2.default.createElement(
+	                                'td',
+	                                null,
+	                                'Flying W Ranch'
+	                            ),
+	                            _react2.default.createElement(
+	                                'td',
+	                                null,
+	                                'https://www.facebook.com/Flying-W-Ranch-366577716687074/'
+	                            ),
+	                            _react2.default.createElement(
+	                                'td',
+	                                null,
+	                                '5120 St Marys Rd, HillsboroughJ'
+	                            ),
+	                            _react2.default.createElement(
+	                                'td',
+	                                null,
+	                                'Orange'
+	                            ),
+	                            _react2.default.createElement(
+	                                'td',
+	                                null,
+	                                'Boarding, Western, Hunter under Saddle, Lessons, Summer Camp'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'tr',
+	                            null,
+	                            _react2.default.createElement(
+	                                'td',
+	                                null,
+	                                'Mane Event Stables'
+	                            ),
+	                            _react2.default.createElement(
+	                                'td',
+	                                null,
+	                                'http://maneeventstables.com'
+	                            ),
+	                            _react2.default.createElement(
+	                                'td',
+	                                null,
+	                                '2545 Hwy 54 W, Chapel Hill'
+	                            ),
+	                            _react2.default.createElement(
+	                                'td',
+	                                null,
+	                                'Orange'
+	                            ),
+	                            _react2.default.createElement(
+	                                'td',
+	                                null,
+	                                'Boarding, Lessons, Hunters, Eventing, Summer Camps'
 	                            )
 	                        )
 	                    )
 	                )
+	            )
+	        );
+	    }
+	});
+
+	var Main = _react2.default.createClass({
+	    displayName: 'Main',
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'container' },
+	                _react2.default.createElement(Jumbotron, null),
+	                _react2.default.createElement(Header, null),
+	                _react2.default.createElement(Stables, null)
 	            ),
 	            _react2.default.createElement(Footer, null)
 	        );
 	    }
 	});
 
-	_reactDom2.default.render(_react2.default.createElement(Stables, null), document.getElementById('root'));
+	_reactDom2.default.render(_react2.default.createElement(Main, null), document.getElementById('root'));
 
 /***/ },
 /* 2 */

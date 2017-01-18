@@ -51,11 +51,7 @@ var Footer = React.createClass({
 var Stables = React.createClass({
     render: function () {
         return (
-        <div>
-            <div className="container">
-                <Jumbotron />
-                <Header />
-
+            <div>
                 <h3>Riding Stables and Lesson Programs</h3>
                 <div className="row">
                     <div className="col-med-2"></div>
@@ -119,15 +115,26 @@ var Stables = React.createClass({
                         </tbody>
                     </table>
                 </div>
+            </div>
+        );
+    }
+});
 
-            </div> 
-
-            <Footer />
-        </div>
+var Main = React.createClass({
+    render: function () {
+        return (
+            <div>
+                <div className="container">
+                    <Jumbotron />
+                    <Header />
+                    <Stables />
+                </div> 
+                <Footer />
+            </div>
         );
     }
 });
 
 ReactDOM.render((
-    <Stables />
+    <Main />
 ), document.getElementById('root'));
