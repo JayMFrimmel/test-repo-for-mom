@@ -203,6 +203,42 @@
 	    }
 	});
 
+	var Stable = _react2.default.createClass({
+	    displayName: 'Stable',
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'tr',
+	            null,
+	            _react2.default.createElement(
+	                'td',
+	                null,
+	                this.props.name
+	            ),
+	            _react2.default.createElement(
+	                'td',
+	                null,
+	                this.props.link
+	            ),
+	            _react2.default.createElement(
+	                'td',
+	                null,
+	                this.props.address
+	            ),
+	            _react2.default.createElement(
+	                'td',
+	                null,
+	                this.props.county
+	            ),
+	            _react2.default.createElement(
+	                'td',
+	                null,
+	                this.props.features
+	            )
+	        );
+	    }
+	});
+
 	var StableContent = _react2.default.createClass({
 	    displayName: 'StableContent',
 
@@ -245,151 +281,36 @@
 	                            'Services Offered'
 	                        )
 	                    ),
-	                    _react2.default.createElement(
-	                        'tr',
-	                        null,
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            'Blue Moon Stables'
-	                        ),
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            'http://www.bluemoonstables.biz'
-	                        ),
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            '1120 Whippoorwill Lane, Chapel Hill'
-	                        ),
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            'Orange'
-	                        ),
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            'Saddleseat, Lessons, Summer Camps'
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'tr',
-	                        null,
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            'Chapel Hill Equestrian'
-	                        ),
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            'http://www.chapelhillequestrian.net/default.htm'
-	                        ),
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            '6614 Alexander Dr, Chapel Hill'
-	                        ),
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            'Orange'
-	                        ),
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            'Boarding, Lessons, Hunters, Dressage'
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'tr',
-	                        null,
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            'Double Take Stables'
-	                        ),
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            'http://doubletakestables.weebly.com'
-	                        ),
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            'Chapel Hill'
-	                        ),
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            'Orange'
-	                        ),
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            'Boarding, Lessons, Hunters, Jumpers, Summer Camps'
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'tr',
-	                        null,
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            'Flying W Ranch'
-	                        ),
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            'https://www.facebook.com/Flying-W-Ranch-366577716687074/'
-	                        ),
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            '5120 St Marys Rd, HillsboroughJ'
-	                        ),
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            'Orange'
-	                        ),
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            'Boarding, Western, Hunter under Saddle, Lessons, Summer Camp'
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'tr',
-	                        null,
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            'Mane Event Stables'
-	                        ),
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            'http://maneeventstables.com'
-	                        ),
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            '2545 Hwy 54 W, Chapel Hill'
-	                        ),
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            'Orange'
-	                        ),
-	                        _react2.default.createElement(
-	                            'td',
-	                            null,
-	                            'Boarding, Lessons, Hunters, Eventing, Summer Camps'
-	                        )
-	                    )
+	                    _react2.default.createElement(Stable, {
+	                        name: 'Blue Moon Stables',
+	                        link: 'http://www.bluemoonstables.biz',
+	                        address: '1120 Whippoorwill Lane, Chapel Hill',
+	                        county: 'Orange',
+	                        features: 'Saddleseat, Lessons, Summer Camps' }),
+	                    _react2.default.createElement(Stable, {
+	                        name: 'Chapel Hill Equestrian',
+	                        link: 'http://www.chapelhillequestrian.net/default.htm',
+	                        address: '6614 Alexander Dr, Chapel Hill',
+	                        county: 'Orange',
+	                        features: 'Boarding, Lessons, Hunters, Dressage' }),
+	                    _react2.default.createElement(Stable, {
+	                        name: 'Double Take Stables',
+	                        link: 'http://doubletakestables.weebly.com',
+	                        address: 'Chapel Hill',
+	                        county: 'Orange',
+	                        features: 'Boarding, Lessons, Hunters, Jumpers, Summer Camps' }),
+	                    _react2.default.createElement(Stable, {
+	                        name: 'Flying W Ranch',
+	                        link: 'https://www.facebook.com/Flying-W-Ranch-366577716687074/',
+	                        address: '5120 St Marys Rd, HillsboroughJ',
+	                        county: 'Orange',
+	                        features: 'Boarding, Western, Hunter under Saddle, Lessons, Summer Camp' }),
+	                    _react2.default.createElement(Stable, {
+	                        name: 'Mane Event Stables',
+	                        link: 'http://maneeventstables.com',
+	                        address: '2545 Hwy 54 W, Chapel Hill',
+	                        county: 'Orange',
+	                        features: 'Boarding, Lessons, Hunters, Eventing, Summer Camps' })
 	                )
 	            )
 	        );

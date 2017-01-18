@@ -85,6 +85,20 @@ var StableImages = React.createClass({
     }
 });
 
+var Stable = React.createClass({
+    render: function () {
+        return (
+            <tr>
+                <td>{this.props.name}</td>
+                <td>{this.props.link}</td>
+                <td>{this.props.address}</td>
+                <td>{this.props.county}</td>
+                <td>{this.props.features}</td>
+            </tr>
+        );
+    }
+});
+
 var StableContent = React.createClass({
     render: function () {
         return (
@@ -98,41 +112,36 @@ var StableContent = React.createClass({
                         <th>County</th>
                         <th>Services Offered</th>
                     </tr>
-                    <tr>
-                        <td>Blue Moon Stables</td>
-                        <td>http://www.bluemoonstables.biz</td>
-                        <td>1120 Whippoorwill Lane, Chapel Hill</td>
-                        <td>Orange</td>
-                        <td>Saddleseat, Lessons, Summer Camps</td>
-                    </tr>
-                    <tr>
-                        <td>Chapel Hill Equestrian</td>
-                        <td>http://www.chapelhillequestrian.net/default.htm</td>
-                        <td>6614 Alexander Dr, Chapel Hill</td>
-                        <td>Orange</td>
-                        <td>Boarding, Lessons, Hunters, Dressage</td>
-                    </tr>
-                    <tr>
-                        <td>Double Take Stables</td>
-                        <td>http://doubletakestables.weebly.com</td>
-                        <td>Chapel Hill</td>
-                        <td>Orange</td>
-                        <td>Boarding, Lessons, Hunters, Jumpers, Summer Camps</td>
-                    </tr>
-                    <tr>
-                        <td>Flying W Ranch</td>
-                        <td>https://www.facebook.com/Flying-W-Ranch-366577716687074/</td>
-                        <td>5120 St Marys Rd, HillsboroughJ</td>
-                        <td>Orange</td>
-                        <td>Boarding, Western, Hunter under Saddle, Lessons, Summer Camp</td>
-                    </tr>
-                    <tr>
-                        <td>Mane Event Stables</td>
-                        <td>http://maneeventstables.com</td>
-                        <td>2545 Hwy 54 W, Chapel Hill</td>
-                        <td>Orange</td>
-                        <td>Boarding, Lessons, Hunters, Eventing, Summer Camps</td>
-                    </tr>
+                    <Stable
+                        name="Blue Moon Stables"
+                        link="http://www.bluemoonstables.biz"
+                        address="1120 Whippoorwill Lane, Chapel Hill"
+                        county="Orange"
+                        features="Saddleseat, Lessons, Summer Camps" />
+                    <Stable
+                        name="Chapel Hill Equestrian"
+                        link="http://www.chapelhillequestrian.net/default.htm"
+                        address="6614 Alexander Dr, Chapel Hill"
+                        county="Orange"
+                        features="Boarding, Lessons, Hunters, Dressage" />
+                    <Stable
+                        name="Double Take Stables"
+                        link="http://doubletakestables.weebly.com"
+                        address="Chapel Hill"
+                        county="Orange"
+                        features="Boarding, Lessons, Hunters, Jumpers, Summer Camps" />
+                    <Stable
+                        name="Flying W Ranch"
+                        link="https://www.facebook.com/Flying-W-Ranch-366577716687074/"
+                        address="5120 St Marys Rd, HillsboroughJ"
+                        county="Orange"
+                        features="Boarding, Western, Hunter under Saddle, Lessons, Summer Camp" />
+                    <Stable
+                        name="Mane Event Stables"
+                        link="http://maneeventstables.com"
+                        address="2545 Hwy 54 W, Chapel Hill"
+                        county="Orange"
+                        features="Boarding, Lessons, Hunters, Eventing, Summer Camps" />
                     </tbody>
                 </table>
             </div>
