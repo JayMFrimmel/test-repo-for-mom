@@ -63,6 +63,98 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	var Jumbotron = _react2.default.createClass({
+	    displayName: 'Jumbotron',
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            { className: 'jumbotron' },
+	            _react2.default.createElement(
+	                'h2',
+	                null,
+	                'Riding Stables and Lesson Programs'
+	            )
+	        );
+	    }
+	});
+
+	var Header = _react2.default.createClass({
+	    displayName: 'Header',
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'header',
+	            { id: 'masthead' },
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'container' },
+	                _react2.default.createElement(
+	                    'a',
+	                    { href: 'index.html', id: 'logo' },
+	                    'Much ADO! Home'
+	                ),
+	                _react2.default.createElement(
+	                    'nav',
+	                    null,
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'index.html' },
+	                        '| Welcome! |'
+	                    ),
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'stables-lessons.html' },
+	                        'Lessons and Stables |'
+	                    ),
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'tack-apparel.html' },
+	                        'Tack and Apparel |'
+	                    ),
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'vets-farriers.html' },
+	                        'Veterinarians and Farriers |'
+	                    ),
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'feed-supplies-trailers.html' },
+	                        'Barn Supplies, Feed, and Trailers |'
+	                    ),
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'contact.html' },
+	                        'Contact Us |'
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+
+	var Footer = _react2.default.createClass({
+	    displayName: 'Footer',
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'footer',
+	            null,
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'container' },
+	                _react2.default.createElement('div', { className: 'col-med-2' }),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'col-med-8' },
+	                    '\xA9 Copyright 2017 Jay M. Frimmel'
+	                ),
+	                _react2.default.createElement('div', { className: 'col-med-2' })
+	            )
+	        );
+	    }
+	});
+
 	var Stables = _react2.default.createClass({
 	    displayName: 'Stables',
 
@@ -73,62 +165,8 @@
 	            _react2.default.createElement(
 	                'div',
 	                { className: 'container' },
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'jumbotron' },
-	                    _react2.default.createElement(
-	                        'h2',
-	                        null,
-	                        'Riding Stables and Lesson Programs'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'header',
-	                    { id: 'masthead' },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'container' },
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'index.html', id: 'logo' },
-	                            'Much ADO! Home'
-	                        ),
-	                        _react2.default.createElement(
-	                            'nav',
-	                            null,
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: 'index.html' },
-	                                '| Welcome! |'
-	                            ),
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: 'stables-lessons.html' },
-	                                'Lessons and Stables |'
-	                            ),
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: 'tack-apparel.html' },
-	                                'Tack and Apparel |'
-	                            ),
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: 'vets-farriers.html' },
-	                                'Veterinarians and Farriers |'
-	                            ),
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: 'feed-supplies-trailers.html' },
-	                                'Barn Supplies, Feed, and Trailers |'
-	                            ),
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: 'contact.html' },
-	                                'Contact Us |'
-	                            )
-	                        )
-	                    )
-	                ),
+	                _react2.default.createElement(Jumbotron, null),
+	                _react2.default.createElement(Header, null),
 	                _react2.default.createElement(
 	                    'h3',
 	                    null,
@@ -340,21 +378,7 @@
 	                    )
 	                )
 	            ),
-	            _react2.default.createElement(
-	                'footer',
-	                null,
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'container' },
-	                    _react2.default.createElement('div', { className: 'col-med-2' }),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'col-med-8' },
-	                        '\xA9 Copyright 2017 Jay M. Frimmel'
-	                    ),
-	                    _react2.default.createElement('div', { className: 'col-med-2' })
-	                )
-	            )
+	            _react2.default.createElement(Footer, null)
 	        );
 	    }
 	});

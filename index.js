@@ -1,28 +1,60 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+var Jumbotron = React.createClass({
+    render: function () {
+        return (
+            <div className="jumbotron">
+                <h2>Riding Stables and Lesson Programs</h2>
+            </div>
+        );
+    }
+});
+
+var Header = React.createClass({
+    render: function () {
+        return (
+            <header id="masthead">
+                <div className="container">
+                    <a href="index.html" id="logo">Much ADO! Home</a>
+
+                    <nav>
+                        <a href="index.html">| Welcome! |</a>
+                        <a href="stables-lessons.html">Lessons and Stables |</a>
+                        <a href="tack-apparel.html">Tack and Apparel |</a>
+                        <a href="vets-farriers.html">Veterinarians and Farriers |</a>
+                        <a href="feed-supplies-trailers.html">Barn Supplies, Feed, and Trailers |</a>
+                        <a href="contact.html">Contact Us |</a>
+                    </nav>
+                </div>
+            </header>
+        );
+    }
+});
+
+var Footer = React.createClass({
+    render: function () {
+        return (
+            <footer>
+                <div className="container">
+                    <div className="col-med-2"></div>
+                    <div className="col-med-8">
+                        &copy; Copyright 2017 Jay M. Frimmel
+                    </div>
+                    <div className="col-med-2"></div>
+                </div>
+            </footer>
+        );
+    }
+})
+
 var Stables = React.createClass({
     render: function () {
         return (
         <div>
             <div className="container">
-                <div className="jumbotron">
-                    <h2>Riding Stables and Lesson Programs</h2>
-                </div>
-                <header id="masthead">
-                    <div className="container">
-                        <a href="index.html" id="logo">Much ADO! Home</a>
-
-                        <nav>
-                            <a href="index.html">| Welcome! |</a>
-                            <a href="stables-lessons.html">Lessons and Stables |</a>
-                            <a href="tack-apparel.html">Tack and Apparel |</a>
-                            <a href="vets-farriers.html">Veterinarians and Farriers |</a>
-                            <a href="feed-supplies-trailers.html">Barn Supplies, Feed, and Trailers |</a>
-                            <a href="contact.html">Contact Us |</a>
-                        </nav>
-                    </div>
-                </header>
+                <Jumbotron />
+                <Header />
 
                 <h3>Riding Stables and Lesson Programs</h3>
                 <div className="row">
@@ -90,15 +122,7 @@ var Stables = React.createClass({
 
             </div> 
 
-            <footer>
-                <div className="container">
-                    <div className="col-med-2"></div>
-                    <div className="col-med-8">
-                        &copy; Copyright 2017 Jay M. Frimmel
-                    </div>
-                    <div className="col-med-2"></div>
-                </div>
-            </footer>
+            <Footer />
         </div>
         );
     }
