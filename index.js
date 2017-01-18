@@ -99,50 +99,78 @@ var Stable = React.createClass({
     }
 });
 
+let StablesList = [
+    {
+        name: "Blue Moon Stables",
+        link: "http://www.bluemoonstables.biz",
+        address: "1120 Whippoorwill Lane, Chapel Hill",
+        county: "Orange",
+        features: "Saddleseat, Lessons, Summer Camps"
+    },
+    {
+        name: "Chapel Hill Equestrian",
+        link: "http://www.chapelhillequestrian.net/default.htm",
+        address: "6614 Alexander Dr, Chapel Hill",
+        county: "Orange",
+        features: "Boarding, Lessons, Hunters, Dressage"
+    },
+    {
+        name: "Double Take Stables",
+        link: "http://doubletakestables.weebly.com",
+        address: "Chapel Hill",
+        county: "Orange",
+        features: "Boarding, Lessons, Hunters, Jumpers, Summer Camps"
+    },
+    {
+        name: "Flying W Ranch",
+        link: "https://www.facebook.com/Flying-W-Ranch-366577716687074/",
+        address: "5120 St Marys Rd, HillsboroughJ",
+        county: "Orange",
+        features: "Boarding, Western, Hunter under Saddle, Lessons, Summer Camp"
+    },
+    {
+        name: "Mane Event Stables",
+        link: "http://maneeventstables.com",
+        address: "2545 Hwy 54 W, Chapel Hill",
+        county: "Orange",
+        features: "Boarding, Lessons, Hunters, Eventing, Summer Camps"
+    }
+];
+
+var StableList = React.createClass({
+    render: function () {
+        return (
+            <tbody>
+                {
+                  StablesList.map(stable => 
+                    <Stable
+                        name={stable.name}
+                        link={stable.link}
+                        address={stable.address}
+                        county={stable.county}
+                        features={stable.features} />
+                  )
+                }
+            </tbody>
+        );
+    }
+});
+
 var StableContent = React.createClass({
     render: function () {
         return (
             <div className="container">
                 <table className="table table-bordered">
-                    <tbody>
-                    <tr>
-                        <th>Stable Name</th>
-                        <th>Website</th>
-                        <th>Street Address</th>
-                        <th>County</th>
-                        <th>Services Offered</th>
-                    </tr>
-                    <Stable
-                        name="Blue Moon Stables"
-                        link="http://www.bluemoonstables.biz"
-                        address="1120 Whippoorwill Lane, Chapel Hill"
-                        county="Orange"
-                        features="Saddleseat, Lessons, Summer Camps" />
-                    <Stable
-                        name="Chapel Hill Equestrian"
-                        link="http://www.chapelhillequestrian.net/default.htm"
-                        address="6614 Alexander Dr, Chapel Hill"
-                        county="Orange"
-                        features="Boarding, Lessons, Hunters, Dressage" />
-                    <Stable
-                        name="Double Take Stables"
-                        link="http://doubletakestables.weebly.com"
-                        address="Chapel Hill"
-                        county="Orange"
-                        features="Boarding, Lessons, Hunters, Jumpers, Summer Camps" />
-                    <Stable
-                        name="Flying W Ranch"
-                        link="https://www.facebook.com/Flying-W-Ranch-366577716687074/"
-                        address="5120 St Marys Rd, HillsboroughJ"
-                        county="Orange"
-                        features="Boarding, Western, Hunter under Saddle, Lessons, Summer Camp" />
-                    <Stable
-                        name="Mane Event Stables"
-                        link="http://maneeventstables.com"
-                        address="2545 Hwy 54 W, Chapel Hill"
-                        county="Orange"
-                        features="Boarding, Lessons, Hunters, Eventing, Summer Camps" />
-                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>Stable Name</th>
+                            <th>Website</th>
+                            <th>Street Address</th>
+                            <th>County</th>
+                            <th>Services Offered</th>
+                        </tr>
+                    </thead>
+                    <StableList />
                 </table>
             </div>
         );

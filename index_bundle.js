@@ -239,6 +239,57 @@
 	    }
 	});
 
+	var StablesList = [{
+	    name: "Blue Moon Stables",
+	    link: "http://www.bluemoonstables.biz",
+	    address: "1120 Whippoorwill Lane, Chapel Hill",
+	    county: "Orange",
+	    features: "Saddleseat, Lessons, Summer Camps"
+	}, {
+	    name: "Chapel Hill Equestrian",
+	    link: "http://www.chapelhillequestrian.net/default.htm",
+	    address: "6614 Alexander Dr, Chapel Hill",
+	    county: "Orange",
+	    features: "Boarding, Lessons, Hunters, Dressage"
+	}, {
+	    name: "Double Take Stables",
+	    link: "http://doubletakestables.weebly.com",
+	    address: "Chapel Hill",
+	    county: "Orange",
+	    features: "Boarding, Lessons, Hunters, Jumpers, Summer Camps"
+	}, {
+	    name: "Flying W Ranch",
+	    link: "https://www.facebook.com/Flying-W-Ranch-366577716687074/",
+	    address: "5120 St Marys Rd, HillsboroughJ",
+	    county: "Orange",
+	    features: "Boarding, Western, Hunter under Saddle, Lessons, Summer Camp"
+	}, {
+	    name: "Mane Event Stables",
+	    link: "http://maneeventstables.com",
+	    address: "2545 Hwy 54 W, Chapel Hill",
+	    county: "Orange",
+	    features: "Boarding, Lessons, Hunters, Eventing, Summer Camps"
+	}];
+
+	var StableList = _react2.default.createClass({
+	    displayName: 'StableList',
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'tbody',
+	            null,
+	            StablesList.map(function (stable) {
+	                return _react2.default.createElement(Stable, {
+	                    name: stable.name,
+	                    link: stable.link,
+	                    address: stable.address,
+	                    county: stable.county,
+	                    features: stable.features });
+	            })
+	        );
+	    }
+	});
+
 	var StableContent = _react2.default.createClass({
 	    displayName: 'StableContent',
 
@@ -250,7 +301,7 @@
 	                'table',
 	                { className: 'table table-bordered' },
 	                _react2.default.createElement(
-	                    'tbody',
+	                    'thead',
 	                    null,
 	                    _react2.default.createElement(
 	                        'tr',
@@ -280,38 +331,9 @@
 	                            null,
 	                            'Services Offered'
 	                        )
-	                    ),
-	                    _react2.default.createElement(Stable, {
-	                        name: 'Blue Moon Stables',
-	                        link: 'http://www.bluemoonstables.biz',
-	                        address: '1120 Whippoorwill Lane, Chapel Hill',
-	                        county: 'Orange',
-	                        features: 'Saddleseat, Lessons, Summer Camps' }),
-	                    _react2.default.createElement(Stable, {
-	                        name: 'Chapel Hill Equestrian',
-	                        link: 'http://www.chapelhillequestrian.net/default.htm',
-	                        address: '6614 Alexander Dr, Chapel Hill',
-	                        county: 'Orange',
-	                        features: 'Boarding, Lessons, Hunters, Dressage' }),
-	                    _react2.default.createElement(Stable, {
-	                        name: 'Double Take Stables',
-	                        link: 'http://doubletakestables.weebly.com',
-	                        address: 'Chapel Hill',
-	                        county: 'Orange',
-	                        features: 'Boarding, Lessons, Hunters, Jumpers, Summer Camps' }),
-	                    _react2.default.createElement(Stable, {
-	                        name: 'Flying W Ranch',
-	                        link: 'https://www.facebook.com/Flying-W-Ranch-366577716687074/',
-	                        address: '5120 St Marys Rd, HillsboroughJ',
-	                        county: 'Orange',
-	                        features: 'Boarding, Western, Hunter under Saddle, Lessons, Summer Camp' }),
-	                    _react2.default.createElement(Stable, {
-	                        name: 'Mane Event Stables',
-	                        link: 'http://maneeventstables.com',
-	                        address: '2545 Hwy 54 W, Chapel Hill',
-	                        county: 'Orange',
-	                        features: 'Boarding, Lessons, Hunters, Eventing, Summer Camps' })
-	                )
+	                    )
+	                ),
+	                _react2.default.createElement(StableList, null)
 	            )
 	        );
 	    }
